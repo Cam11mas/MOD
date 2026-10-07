@@ -1,0 +1,87 @@
+{
+  "format_version": "1.16.0",
+  "materials": [
+    {
+      "name": "photon_pbr_base",
+      "description": "Photon PBR Base Material Profile",
+      "vertexShader": "photon_pbr_forward",
+      "fragmentShader": "photon_pbr_forward",
+      "properties": {
+        "baseColorTexture": "textures/pbr/basecolor/default.png",
+        "normalTexture": "textures/pbr/normal/default.png",
+        "roughnessTexture": "textures/pbr/roughness/default.png",
+        "metallicTexture": "textures/pbr/metallic/default.png",
+        "emissiveTexture": "textures/pbr/emissive/default.png",
+        "ambientOcclusionTexture": "textures/pbr/ao/default.png",
+        "alphaMode": "Opaque"
+      },
+      "renderState": {
+        "cullFace": "Back",
+        "depthWrite": true,
+        "depthTest": true,
+        "blendMode": "Opaque"
+      },
+      "featureFlags": {
+        "pbrEnabled": true,
+        "normalMapping": true,
+        "roughnessControl": true,
+        "emissiveSupport": true,
+        "customLighting": true,
+        "ambientOcclusion": true
+      }
+    },
+    {
+      "name": "photon_water_advanced",
+      "description": "Photon Advanced Water Material",
+      "vertexShader": "photon_water_waves",
+      "fragmentShader": "photon_water_waves",
+      "properties": {
+        "baseColorTexture": "textures/water/base.png",
+        "normalTexture": "textures/water/normal.png",
+        "waterFlowTexture": "textures/water/flow.png",
+        "causticsTexture": "textures/water/caustics.png",
+        "alphaMode": "Blend"
+      },
+      "renderState": {
+        "cullFace": "Off",
+        "depthWrite": false,
+        "depthTest": true,
+        "blendMode": "Alpha"
+      },
+      "featureFlags": {
+        "waterPhysics": true,
+        "waveSimulation": true,
+        "caustics": true,
+        "refraction": true,
+        "reflection": true,
+        "foam": true
+      }
+    },
+    {
+      "name": "photon_glass_advanced",
+      "description": "Photon Advanced Glass Material",
+      "vertexShader": "photon_pbr_forward",
+      "fragmentShader": "photon_pbr_forward",
+      "properties": {
+        "baseColorTexture": "textures/glass/base.png",
+        "normalTexture": "textures/glass/normal.png",
+        "roughnessTexture": "textures/glass/roughness.png",
+        "alphaMode": "Blend",
+        "transmission": 1.0,
+        "ior": 1.5
+      },
+      "renderState": {
+        "cullFace": "Off",
+        "depthWrite": false,
+        "depthTest": true,
+        "blendMode": "Alpha"
+      },
+      "featureFlags": {
+        "transparency": true,
+        "transmission": true,
+        "refraction": true,
+        "reflection": true
+      }
+    }
+  ]
+}

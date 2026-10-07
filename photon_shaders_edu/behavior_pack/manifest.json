@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Photon Shaders - Behavior Pack",
+    "name": "Photon Shaders EduEdition - Behavior",
+    "uuid": "photon-edu-0002-0000-0000-000000000001",
+    "version": [1, 2, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "description": "Photon shader system and UI",
+      "uuid": "photon-edu-0004-0000-0000-000000000001",
+      "version": [1, 2, 0]
+    }
+  ]
+}
