@@ -2,309 +2,256 @@
 
 ## Overview
 
-**Photon Shaders v1.2.0** brings professional-grade rendering to Minecraft Education Edition with:
-- **Advanced PBR Rendering** - Physically-based materials with metallic and roughness control
-- **Global Illumination** - Realistic indirect lighting and light bounce
-- **Advanced Water System** - Waves, caustics, refraction, reflection, and foam
-- **Subsurface Scattering** - Realistic light transmission through translucent materials
-- **Parallax Mapping** - Depth-based surface detail enhancement
-- **Bloom & HDR** - High dynamic range rendering with post-processing effects
-- **Atmospheric Effects** - Sky rendering, fog, volumetric lighting, and clouds
-- **Full Settings UI** - In-game menu system with presets and granular controls
+**Photon Shaders v1.2.0** brings professional-grade rendering to Minecraft Education Edition with a modular, extensible framework:
 
-## Installation
+- **Advanced PBR Rendering** - Physically-based materials
+- **Global Illumination** - Realistic indirect lighting
+- **Advanced Water System** - Waves, caustics, refraction
+- **Subsurface Scattering** - Translucent material lighting
+- **Parallax Mapping** - Depth-based surface detail
+- **Bloom & HDR** - Post-processing effects
+- **Atmospheric Effects** - Sky, fog, volumetric lighting
+- **Modular Mod System** - Extensible framework for custom mods
+- **Full Settings UI** - In-game menu with presets and granular controls
 
-1. **Download the addon**
-   - Download `photon_shaders_edu.zip`
+## Quick Start
 
-2. **Drag-and-Drop into Minecraft Education Edition**
-   - Open Minecraft Education Edition in Chrome
-   - Create or open a world
-   - Drag the `.zip` file into the game window
-   - Click "Allow" when prompted
+### Installation
 
-3. **Activate in Settings**
-   - Go to Settings → Add-Ons
-   - Enable "Photon Shaders EduEdition"
-   - Restart the world
+1. Download `photon_shaders_edu.zip`
+2. Drag into Minecraft Education Edition window
+3. Enable in Settings → Add-Ons
+4. In-game, type: `!photon`
 
-4. **Access the Settings Menu**
-   - In-game, type `!photon` to open the main settings menu
-
-## In-Game Commands
+### Commands
 
 ```
-!photon          - Open main Photon settings menu
-!photon status   - Display current Photon configuration
+!photon          - Open main settings menu
+!photon status   - Display current configuration
 ```
 
-## Settings Menu Structure
+## Built-In Mods
 
-### Main Menu
-The main settings menu presents 5 primary options:
+The framework includes six built-in mod modules:
+
+### 1. Photon Shaders (⚙️)
+**Advanced PBR rendering & effects**
+- Quality levels: Low, Medium, High, Ultra
+- PBR Lighting, Global Illumination, Ambient Occlusion
+- Bloom, Parallax Mapping, Subsurface Scattering
+- Dynamic Lighting, Adjustable shadow distance
+
+### 2. Distant Horizons (🌍)
+**LOD terrain rendering system**
+- Adjustable LOD draw distance
+- Terrain simplification at distance
+- Multiple detail levels
+- Performance optimization for far-view rendering
+
+### 3. Conquest Reforged (🎨)
+**Advanced material & texture pack**
+- Material pack selection
+- Geometry detail levels
+- Custom palette customization
+- High-quality block and item textures
+
+### 4. Advanced Water (💧)
+**Enhanced water rendering system**
+- Water quality levels (Low to Ultra)
+- Wave simulation physics
+- Caustic patterns and animation
+- Refraction and reflection effects
+- Foam generation and effects
+
+### 5. Atmospheric FX (☁️)
+**Sky, fog, and lighting effects**
+- Sky rendering control
+- Fog effects and density adjustment
+- Volumetric lighting (god rays)
+- Cloud rendering and coverage
+- Rainbow and lightning effects
+
+### 6. Performance Tuner (⚡)
+**Optimization & quality presets**
+- **Competitive:** Maximum FPS (60+)
+- **Balanced:** Quality/Performance (40-60 FPS)
+- **Cinematic:** Maximum quality (20-40 FPS)
+- **Fantasy:** Artistic colors (30-50 FPS)
+
+## Menu System
+
+### Navigation Structure
 
 ```
-┌─────────────────────────────────────┐
-│  PHOTON SHADERS v1.2.0              │
-│  Status: ✓ Enabled                  │
-├─────────────────────────────────────┤
-│  [Settings ▼]  [Presets ▼]          │
-│  [Water ▼]     [Atmosphere ▼]       │
-│  [Disable ▼]                        │
-└─────────────────────────────────────┘
+Main Menu
+├── Photon Shaders
+│   ├── Quality Level
+│   ├── PBR Lighting
+│   ├── Global Illumination
+│   ├── Ambient Occlusion
+│   ├── Bloom Effect
+│   ├── Parallax Mapping
+│   └── Subsurface Scattering
+├── Distant Horizons
+│   ├── LOD Distance
+│   ├── Terrain Simplification
+│   └── Detail Levels
+├── Conquest Reforged
+│   ├── Material Pack
+│   ├── Geometry Detail
+│   └── Custom Palettes
+├── Advanced Water
+│   ├── Water Quality
+│   ├── Wave Simulation
+│   ├── Caustics
+│   ├── Refraction
+│   └── Reflection
+├── Atmospheric FX
+│   ├── Sky Rendering
+│   ├── Fog Effects
+│   ├── Volumetric Lighting
+│   └── Cloud Rendering
+└── Performance Tuner
+    ├── Competitive Preset
+    ├── Balanced Preset
+    ├── Cinematic Preset
+    └── Fantasy Preset
 ```
 
-**Navigation:**
-- Close button (X): Top-left - closes menu
-- Back button (→): Bottom-right - returns to previous menu
+### Button Placement
 
-### Settings Submenu
-Core rendering configuration:
-- **Quality Level** - Low, Medium, High, Ultra
-- **PBR Lighting** - Toggle physically-based rendering
-- **Global Illumination** - Toggle indirect lighting
-- **Ambient Occlusion** - Toggle AO darkening in crevices
-- **Bloom Effect** - Toggle bloom on bright objects
-- **Parallax Mapping** - Toggle depth-based surface detail
-- **Subsurface Scattering** - Toggle translucent material lighting
-- **Dynamic Lighting** - Toggle dynamic light sources
-- **Shadow Distance** - Adjust shadow rendering distance (64-512 blocks)
+- **Left Side:** Close button (X) - closes menu immediately
+- **Right Side:** Back button (→) - returns to previous menu level
+- **Bottom:** "Back to Main Menu" button on all submenus
 
-### Presets Submenu
-Quick-apply preset configurations:
-- **Competitive** - Fast & clear, minimal quality loss, maximum performance
-- **Balanced** - Best balance of quality and performance
-- **Cinematic** - Maximum visual quality for screenshots and recording
-- **Fantasy** - Artistic color palette with enhanced effects
-
-### Water Submenu
-Advanced water rendering settings:
-- **Water Quality** - Low, Medium, High, Ultra
-- **Wave Simulation** - Toggle realistic wave physics
-- **Caustics** - Toggle underwater light patterns
-- **Refraction** - Toggle light bending through water
-- **Reflection** - Toggle water surface reflections
-- **Foam Effects** - Toggle wave foam and spray
-- **Underwater Caustics** - Toggle caustic patterns underwater
-- **Wave Height** - Adjust wave amplitude (0.1-2.0)
-- **Caustic Intensity** - Adjust caustic brightness (0.0-1.0)
-
-### Atmosphere Submenu
-Sky and atmospheric effects:
-- **Sky Rendering** - Toggle sky rendering
-- **Fog Effects** - Toggle fog rendering
-- **Volumetric Lighting** - Toggle light rays through atmosphere
-- **Cloud Rendering** - Toggle cloud rendering
-- **Rainbow Effects** - Toggle rainbow rendering during rain
-- **Lightning Flashes** - Toggle lightning illumination effects
-- **Fog Density** - Adjust fog thickness (0.0-1.0)
-- **Sky Brightness** - Adjust overall sky brightness (0.5-1.5)
-- **Cloud Coverage** - Adjust cloud density (0.0-1.0)
-
-## Shader Features
-
-### Geometry Pass
-- Normal mapping with parallax depth
-- PBR material properties (metallic, roughness, AO)
-- Tessellation for surface detail
-- Double-sided materials for special effects
-
-### Lighting Pass
-- Global illumination with light bouncing
-- Dynamic shadow mapping
-- Per-pixel lighting calculations
-- Ambient occlusion in contact areas
-- Emissive material support
-
-### Water System
-- Real-time wave simulation (GPU-driven)
-- Caustic animation and refraction
-- Realistic water reflection and transparency
-- Foam generation at wave peaks
-- Under-water caustic projection
-
-### Post-Processing
-- Bloom effect for bright objects
-- HDR tone mapping
-- Color grading
-- FXAA anti-aliasing
-- Chromatic aberration (optional)
-
-### Atmosphere
-- Dynamic sky rendering
-- Volumetric fog effects
-- Atmosphere color grading
-- Cloud layer rendering
-- Rainbow rendering during rain
-- Crepuscular rays (god rays)
-
-## Material Profiles
-
-### PBR Base Material
-- Basecolor, normal, roughness, metallic, AO, emissive
-- Customizable lighting response
-- Subsurface scattering support
-- Parallax mapping depth
-
-### Water Material
-- Wave simulation
-- Caustics overlay
-- Refraction and reflection
-- Foam layer
-- Underwater effects
-
-### Glass Material
-- Transmission (transparency)
-- Refraction with IOR (Index of Refraction)
-- Reflection
-- Fresnel effects
-- No depth writing for proper blending
-
-## Preset Details
-
-### Competitive Preset
-```
-Quality: Medium
-PBR: Yes | GI: No | AO: No | Bloom: No | Parallax: No | SSS: No
-Water: Medium | Shadows: 128 blocks
-Best for: Gameplay, PvP, maximum FPS
-Approximate Performance: High (60+ FPS on mid-range hardware)
-```
-
-### Balanced Preset
-```
-Quality: High
-PBR: Yes | GI: Yes | AO: Yes | Bloom: Yes | Parallax: Yes | SSS: No
-Water: High | Shadows: 256 blocks
-Best for: General gameplay with good visuals
-Approximate Performance: Medium (40-60 FPS on mid-range hardware)
-```
-
-### Cinematic Preset
-```
-Quality: Ultra
-PBR: Yes | GI: Yes | AO: Yes | Bloom: Yes | Parallax: Yes | SSS: Yes
-Water: Ultra | Shadows: 512 blocks
-Best for: Screenshots, recording, maximum visual fidelity
-Approximate Performance: Low (20-40 FPS, GPU-intensive)
-```
-
-### Fantasy Preset
-```
-Quality: High
-PBR: Yes | GI: Yes | AO: Yes | Bloom: Yes | Parallax: Yes | SSS: Yes
-Water: Ultra | Shadows: 256 blocks
-Special: Enhanced colors, artistic grading
-Best for: Creative mode, building, artistic shots
-Approximate Performance: Medium-Low (30-50 FPS)
-```
-
-## Integration with Advanced Bedrock Framework
-
-Photon Shaders integrates seamlessly with the Advanced Bedrock Visual Framework:
-- Registers as a primary shader mod
-- Exports 6 core shader modules (PBR, GI, Water, Parallax, SSS, Bloom)
-- Provides modular texture pipeline
-- Compatible with LOD rendering systems
-- Supports multi-mod ecosystem
-
-## Texture Directory Structure
+## File Structure
 
 ```
 photon_shaders_edu/
-resource_pack/
-├── textures/
-│   ├── ui/
-│   │   ├── backgrounds/
-│   │   │   ├── ui_settings_background_main.png (512x512)
-│   │   │   ├── ui_settings_background_submenu.png (512x512)
-│   │   │   ├── ui_presets_background.png (512x512)
-│   │   │   ├── ui_water_background.png (512x512)
-│   │   │   └── ui_atmosphere_background.png (512x512)
-│   │   └── icons/
-│   │       ├── ui_icon_settings.png (64x64)
-│   │       ├── ui_icon_presets.png (64x64)
-│   │       ├── ui_icon_water.png (64x64)
-│   │       ├── ui_icon_sky.png (64x64)
-│   │       ├── ui_icon_close.png (64x64)
-│   │       └── ui_icon_back.png (64x64)
-│   ├── pbr/
-│   │   ├── basecolor/
-│   │   ├── normal/
-│   │   ├── roughness/
-│   │   ├── metallic/
-│   │   ├── emissive/
-│   │   └── ao/
-│   ├── water/
-│   │   ├── base.png
-│   │   ├── normal.png
-│   │   ├── flow.png
-│   │   └── caustics.png
-│   └── glass/
-│       ├── base.png
-│       ├── normal.png
-│       └── roughness.png
+├── manifest.json                          # Main addon manifest
+├── README.md                              # This file
+├── INSTALLATION.md                        # Installation guide
+├── TEXTURE_SPECIFICATIONS.md              # Texture creation guidelines
+├── behavior_pack/
+│   ├── manifest.json                      # Behavior pack manifest
+│   └── scripts/
+│       ├── index.js                       # Entry point
+│       ├── mod_registry.js                # Mod registration system
+│       ├── photon_menu_ui.js              # Main menu UI class
+│       ├── ui_settings_loader.js          # Settings loader
+│       └── ui_schema.json                 # UI schema definition
+├── resource_pack/
+│   ├── manifest.json                      # Resource pack manifest
+│   ├── materials/
+│   │   └── photon_ui_materials.material.json
+│   ├── textures/
+│   │   └── ui/
+│   │       ├── backgrounds/               # Menu backgrounds (512x512)
+│   │       │   ├── ui_main_background.png
+│   │       │   ├── ui_submenu_background.png
+│   │       │   ├── ui_presets_background.png
+│   │       │   ├── ui_water_background.png
+│   │       │   └── ui_atmosphere_background.png
+│   │       └── icons/                     # UI icons (64x64)
+│   │           ├── ui_icon_settings.png
+│   │           ├── ui_icon_presets.png
+│   │           ├── ui_icon_water.png
+│   │           ├── ui_icon_sky.png
+│   │           ├── ui_icon_close.png
+│   │           └── ui_icon_back.png
+│   └── ui/
+│       └── photon_ui_styles.json          # UI style definitions
+└── docs/                                  # Documentation
+    ├── INSTALLATION.md
+    ├── API.md
+    └── CUSTOMIZATION.md
 ```
 
-**See `TEXTURE_SPECIFICATIONS.md` for detailed texture specifications and creation guidelines.**
+## Texture Specifications
 
-## Performance Optimization
+### Background Textures
+- **Format:** PNG (RGBA)
+- **Resolution:** 512 × 512 pixels
+- **Colors:** Dark gradients with cyan (#00ffff) accents
+- **Style:** Subtle grid pattern, glowing borders, circuit board aesthetic
 
-- **Low Quality**: Disables advanced effects, minimal GPU load
-- **Medium Quality**: Balance mode with most features
-- **High Quality**: Full feature set with some optimization
-- **Ultra Quality**: All features enabled, no optimization
+### Icon Textures
+- **Format:** PNG (RGBA)
+- **Resolution:** 64 × 64 pixels
+- **Colors:** Color-coded by function (cyan for settings, purple for presets, etc.)
+- **Style:** Glowing effects, rounded backgrounds, centered symbols
 
-**Recommended Settings by Hardware:**
+**See TEXTURE_SPECIFICATIONS.md for detailed creation guidelines.**
 
-| Hardware | Quality | Expected FPS |
-|----------|---------|---------------|
-| Mobile/Low-End | Low | 60+ |
-| Mid-Range | Medium | 40-60 |
+## Extensibility
+
+### Adding Custom Mods
+
+To add a new mod to the framework:
+
+1. **Register in `mod_registry.js`:**
+   ```javascript
+   this.mods.set('custom_mod', {
+     id: 'custom_mod',
+     label: 'Custom Mod Name',
+     description: 'Brief description',
+     icon: '🎯',
+     color: '§c',
+     enabled: true,
+     submenu: 'custom_settings'
+   });
+   ```
+
+2. **Add submenu handler in `photon_menu_ui.js`:**
+   ```javascript
+   else if (mod.submenu === 'custom_settings') {
+     form.button('§cCustom Setting\n§8Description');
+   }
+   ```
+
+3. **Create textures** for your mod's icon and settings background
+
+4. **Package and distribute** as an enhanced addon
+
+## Performance Guidelines
+
+| Hardware | Recommended Preset | Expected FPS |
+|----------|-------------------|---------------|
+| Mobile/Low-End | Low/Competitive | 60+ |
+| Mid-Range | Medium/Balanced | 40-60 |
 | High-End | High | 30-50 |
-| Very High-End | Ultra | 20-40 |
+| Very High-End | Ultra/Cinematic | 20-40 |
 
 ## Troubleshooting
 
 ### Menu not appearing
-- Verify addon is enabled in Settings → Add-Ons
+- Verify both packs are enabled in Settings → Add-Ons
 - Try typing `!photon` again
 - Restart the world
 
 ### Performance drops
 - Lower the Quality Level preset
-- Disable subsurface scattering
+- Disable individual effects
 - Reduce shadow distance
-- Disable bloom effect
 
 ### Visual artifacts
-- Ensure GPU supports Bedrock native features
 - Try different quality presets
-- Restart Minecraft
+- Restart Minecraft Education Edition
+- Check for pack conflicts
 
-### Settings not saving
-- Settings are applied per-session
-- Create a new shortcut or bookmark to quickly access settings
+## System Requirements
 
-## Future Updates
-
-Planned features for upcoming versions:
-- Custom preset saving/loading
-- Per-biome shader variations
-- Advanced debugging overlay
-- Performance profiler
-- Community preset sharing
-
-## Support & Contributing
-
-For bugs, questions, or contributions:
-https://github.com/Cam11mas/MOD/issues
+- **Minecraft Education Edition** (latest version)
+- **Browser:** Chrome, Edge (WebGL 2.0 compatible)
+- **RAM:** 4GB minimum, 8GB recommended
+- **GPU:** Dedicated graphics card recommended
+- **Storage:** 500MB free space
 
 ## Credits
 
-**Photon Shaders** - Based on the Java shader pack by sixthsurge  
-**Minecraft Education Edition** - Microsoft Corporation  
-**Advanced Bedrock Framework** - Education Mod Community  
+- **Photon Shaders** - Based on the Java shader pack by sixthsurge
+- **Minecraft Education Edition** - Microsoft Corporation
+- **Advanced Bedrock Framework** - Education Mod Community
 
 ## License
 

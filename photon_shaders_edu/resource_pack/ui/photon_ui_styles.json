@@ -1,0 +1,36 @@
+{
+  "namespace": "photon",
+  "ui_styles": {
+    "photon_main_panel": {
+      "layer": "photon_layer_1",
+      "inherit_from": "common_panel",
+      "size": [512, 512],
+      "fill": "photon_gradient_dark",
+      "border": "photon_border_cyan"
+    },
+    "photon_button_style": {
+      "inherit_from": "common_button",
+      "text_control": {
+        "font_size": 1.2,
+        "color": "#00ffff"
+      },
+      "focus_control": {
+        "layer": 2,
+        "texture": "textures/ui/focus_border_bright"
+      },
+      "default_control": {
+        "layer": 1,
+        "texture": "textures/ui/button_dark"
+      }
+    },
+    "photon_gradient_dark": {
+      "color": "#0a0e1a",
+      "gradient": "photon_dark_to_purple"
+    },
+    "photon_border_cyan": {
+      "color": "#00ffff",
+      "width": 2,
+      "opacity": 0.8
+    }
+  }
+}

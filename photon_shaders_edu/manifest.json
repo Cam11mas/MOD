@@ -1,22 +1,21 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Photon Shader Suite for Minecraft Education Edition - Advanced Visual Effects",
-    "name": "Photon Shaders EduEdition",
-    "uuid": "photon-edu-0001-0000-0000-000000000001",
-    "version": [1, 2, 0]
+    "name": "Photon Shaders Education Edition",
+    "description": "Advanced visual framework with modular shader controls for Minecraft Education Edition",
+    "version": [1, 2, 0],
+    "min_engine_version": [1, 17, 0],
+    "uuid": "b4d0a0c0-5c2f-11ec-81d3-0242ac130003"
   },
   "modules": [
     {
-      "description": "Photon behavior and shader system",
-      "type": "data",
-      "uuid": "photon-edu-0002-0000-0000-000000000001",
+      "type": "behavior",
+      "uuid": "c5e1b1d0-5c2f-11ec-81d3-0242ac130004",
       "version": [1, 2, 0]
     },
     {
-      "description": "Photon textures and materials",
       "type": "resources",
-      "uuid": "photon-edu-0003-0000-0000-000000000001",
+      "uuid": "d6f2c2e0-5c2f-11ec-81d3-0242ac130005",
       "version": [1, 2, 0]
     }
   ],

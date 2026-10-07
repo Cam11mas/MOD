@@ -1,17 +1,29 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Photon Shaders - Behavior Pack",
-    "name": "Photon Shaders EduEdition - Behavior",
-    "uuid": "photon-edu-0002-0000-0000-000000000001",
-    "version": [1, 2, 0]
+    "name": "Photon Shaders - Behavior Pack",
+    "description": "Behavior pack for Photon Shaders with scripting and mod management",
+    "version": [1, 2, 0],
+    "min_engine_version": [1, 17, 0],
+    "uuid": "c5e1b1d0-5c2f-11ec-81d3-0242ac130004"
   },
   "modules": [
     {
-      "type": "data",
-      "description": "Photon shader system and UI",
-      "uuid": "photon-edu-0004-0000-0000-000000000001",
-      "version": [1, 2, 0]
+      "type": "script",
+      "language": "javascript",
+      "uuid": "e7f3d3f0-5c2f-11ec-81d3-0242ac130006",
+      "version": [1, 2, 0],
+      "entry": "scripts/index.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.4.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.2.0"
     }
   ]
 }

@@ -1,17 +1,18 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Photon Shaders - Resource Pack",
-    "name": "Photon Shaders EduEdition - Resources",
-    "uuid": "photon-edu-0003-0000-0000-000000000001",
-    "version": [1, 2, 0]
+    "name": "Photon Shaders - Resource Pack",
+    "description": "High-quality textures, materials, and UI assets for Photon Shaders",
+    "version": [1, 2, 0],
+    "min_engine_version": [1, 17, 0],
+    "uuid": "d6f2c2e0-5c2f-11ec-81d3-0242ac130005"
   },
   "modules": [
     {
       "type": "resources",
-      "description": "Photon shader textures and materials",
-      "uuid": "photon-edu-0005-0000-0000-000000000001",
+      "uuid": "f8f4e4e0-5c2f-11ec-81d3-0242ac130007",
       "version": [1, 2, 0]
     }
-  ]
+  ],
+  "dependencies": []
 }

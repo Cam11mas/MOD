@@ -1,0 +1,21 @@
+{
+  "material": "entity_alphatest",
+  "techniques": [
+    {
+      "passes": [
+        {
+          "vertex_shader": "shaders/glsl/entity.vertex",
+          "fragment_shader": "shaders/glsl/photon_ui.fragment",
+          "vertex_fields": ["Position", "Color", "UV0"],
+          "blend_src": "src_alpha",
+          "blend_dst": "one_minus_src_alpha",
+          "depth_func": "LessEqual",
+          "depth_write": true,
+          "side_effect": "State",
+          "state": "+d"
+        }
+      ]
+    }
+  ],
+  "defines": ["USE_EMISSIVE", "USE_CUSTOM_COLOR"]
+}
