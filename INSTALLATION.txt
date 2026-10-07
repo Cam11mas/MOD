@@ -1,0 +1,80 @@
+=================================================
+MINECRAFT EDUCATION MOD - QUICK START GUIDE
+=================================================
+
+NO ADMIN RIGHTS NEEDED
+NO DEVELOPER TOOLS REQUIRED
+NO LINUX OR COMMAND PROMPT
+
+=================================================
+STEP 1: INSTALL FABRIC LOADER
+=================================================
+
+1. Go to https://fabricmc.net/
+2. Download "Fabric Installer" for Windows/Mac
+3. Double-click the downloaded .exe/.app
+4. Click "Install client"
+5. Make sure Minecraft is CLOSED
+6. Click "Install" button
+7. Close the installer
+
+=================================================
+STEP 2: CREATE MODS FOLDER
+=================================================
+
+1. Press Windows Key + R
+2. Type:   %appdata%
+3. Press Enter
+4. Navigate to:  .minecraft\mods
+5. If "mods" folder doesn't exist, create it (Right-click > New Folder)
+
+For Mac:
+1. Open Finder
+2. Press Cmd + Shift + G
+3. Type: ~/Library/Application Support/minecraft/mods
+4. Press Enter
+5. Create "mods" folder if missing
+
+=================================================
+STEP 3: INSTALL FABRIC API
+=================================================
+
+1. Go to https://modrinth.com/mod/fabric-api
+2. Download the version for Minecraft 1.20.4
+3. Copy the downloaded .jar file
+4. Paste into .minecraft\mods folder
+
+=================================================
+STEP 4: INSTALL EDUCATION MOD
+=================================================
+
+1. Download MinecraftEdu-Mod-1.0.0.jar
+2. Copy the file
+3. Paste into .minecraft\mods folder
+
+=================================================
+STEP 5: LAUNCH MINECRAFT
+=================================================
+
+1. Open Minecraft Launcher
+2. Select "Fabric" profile (dropdown)
+3. Click "Play"
+4. Wait for Minecraft to load
+5. Create a new world or open existing world
+6. The mod is now active!
+
+=================================================
+KEY CONTROLS
+=================================================
+
+F9  - Toggle renderer on/off
+F8  - Open mod settings
+
+=================================================
+DONE!
+=================================================
+
+You're all set. No compilation, no SDK, no admin needed.
+Just drop files in mods folder and play!
+
+For help: https://github.com/Cam11mas/MOD/issues

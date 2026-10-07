@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>MinecraftEdu Mod Installer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="badge">MOD</span>
+        <h1>Minecraft Mod Suite</h1>
+      </div>
+      <button id="downloadBtn" class="primary-btn">Download Mod</button>
+    </header>
+
+    <main class="content">
+      <section class="panel status-panel">
+        <h2>Environment</h2>
+        <ul>
+          <li><strong>Mode:</strong> Fabric Mod (Java)</li>
+          <li><strong>Access:</strong> Standard user only</li>
+          <li><strong>Setup:</strong> No Vulkan SDK required</li>
+          <li><strong>Admin:</strong> Not needed</li>
+          <li><strong>Install:</strong> Drop .jar into mods folder</li>
+        </ul>
+      </section>
+
+      <section class="panel mod-panel">
+        <h2>Education Mod - Feature Overview</h2>
+        <div class="features">
+          <div class="feature-box">
+            <h3>🎨 Custom Shader Support</h3>
+            <p>Dynamic lighting, water reflections, and atmospheric effects for educational rendering.</p>
+          </div>
+          <div class="feature-box">
+            <h3>📊 Interactive Blocks</h3>
+            <p>Create data visualization blocks that display charts, graphs, and real-time information.</p>
+          </div>
+          <div class="feature-box">
+            <h3>🔬 Science Tools</h3>
+            <p>Educational items: particle emitters, spectrum analyzers, and educational NPCs.</p>
+          </div>
+          <div class="feature-box">
+            <h3>⚙️ No Compilation</h3>
+            <p>Pre-compiled JAR. Install and play immediately.</p>
+          </div>
+        </div>
+
+        <div class="install-guide">
+          <h3>Installation Steps</h3>
+          <ol>
+            <li>Download the mod JAR file using the button above</li>
+            <li>Open Minecraft launcher and select "Fabric" profile</li>
+            <li>Click on folder icon to open game directory</li>
+            <li>Navigate to <code>mods</code> folder (create it if missing)</li>
+            <li>Paste the downloaded JAR file</li>
+            <li>Launch Minecraft and enjoy!</li>
+          </ol>
+        </div>
+
+        <div class="system-info">
+          <h3>Requirements</h3>
+          <ul class="requirements-list">
+            <li>Minecraft Java Edition 1.20.4+</li>
+            <li>Fabric Loader installed</li>
+            <li>Fabric API mod (included in bundle)</li>
+            <li>4GB+ RAM allocated to Minecraft</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel preview-panel">
+        <h2>Live Preview</h2>
+        <canvas id="gameCanvas" width="960" height="520" aria-label="Minecraft mod preview"></canvas>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Standard user installation. No admin rights required. Works offline.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

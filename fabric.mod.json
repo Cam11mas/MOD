@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraftedu",
+  "version": "1.0.0",
+  "name": "Minecraft Education Mod",
+  "description": "Educational mod suite with custom rendering, interactive blocks, and science tools. No Vulkan SDK required.",
+  "authors": [
+    "Cam11mas"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Cam11mas/MOD",
+    "sources": "https://github.com/Cam11mas/MOD",
+    "issues": "https://github.com/Cam11mas/MOD/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/minecraftedu/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.cam11mas.minecraftedu.MinecraftEduMod"
+    ],
+    "client": [
+      "com.cam11mas.minecraftedu.client.MinecraftEduClient"
+    ]
+  },
+  "mixins": [
+    "minecraftedu.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "minecraft": "~1.20.4"
+  }
+}
