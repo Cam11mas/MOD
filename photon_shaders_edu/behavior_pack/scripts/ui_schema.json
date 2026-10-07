@@ -1,0 +1,73 @@
+{
+  "title": "Photon Shaders",
+  "body": "Advanced visual framework for Minecraft Education Edition",
+  "closeButton": {
+    "side": "left",
+    "anchor": "top-left",
+    "glyph": "X",
+    "size": "48x48"
+  },
+  "backButton": {
+    "side": "right",
+    "anchor": "bottom-right",
+    "glyph": "->",
+    "size": "48x48"
+  },
+  "menu": {
+    "main": {
+      "title": "Photon Shaders",
+      "options": [
+        { "id": "settings", "label": "Settings", "icon": "textures/ui/icons/settings.png" },
+        { "id": "presets", "label": "Presets", "icon": "textures/ui/icons/presets.png" },
+        { "id": "water", "label": "Water", "icon": "textures/ui/icons/water.png" },
+        { "id": "atmosphere", "label": "Atmosphere", "icon": "textures/ui/icons/sky.png" },
+        { "id": "disable", "label": "Disable", "icon": "textures/ui/icons/close.png" }
+      ]
+    },
+    "settings": {
+      "title": "Photon Settings",
+      "fields": [
+        { "type": "dropdown", "key": "quality", "label": "Quality Level", "options": ["Low", "Medium", "High", "Ultra"], "default": 2 },
+        { "type": "toggle", "key": "pbr", "label": "PBR Lighting", "default": true },
+        { "type": "toggle", "key": "lighting", "label": "Global Illumination", "default": true },
+        { "type": "toggle", "key": "ambientOcclusion", "label": "Ambient Occlusion", "default": true },
+        { "type": "toggle", "key": "bloom", "label": "Bloom", "default": true },
+        { "type": "slider", "key": "shadows", "label": "Shadow Distance", "min": 64, "max": 512, "step": 8, "default": 256 }
+      ]
+    },
+    "presets": {
+      "title": "Photon Presets",
+      "options": [
+        { "id": "competitive", "label": "Competitive", "description": "Fast & clear" },
+        { "id": "balanced", "label": "Balanced", "description": "Best quality/performance" },
+        { "id": "cinematic", "label": "Cinematic", "description": "Maximum quality" },
+        { "id": "fantasy", "label": "Fantasy", "description": "Artistic colors" }
+      ]
+    },
+    "water": {
+      "title": "Water Settings",
+      "fields": [
+        { "type": "dropdown", "key": "waterQuality", "label": "Water Quality", "options": ["Low", "Medium", "High", "Ultra"], "default": 2 },
+        { "type": "toggle", "key": "waves", "label": "Wave Simulation", "default": true },
+        { "type": "toggle", "key": "caustics", "label": "Caustics", "default": true },
+        { "type": "toggle", "key": "refraction", "label": "Refraction", "default": true },
+        { "type": "slider", "key": "waveHeight", "label": "Wave Height", "min": 0.1, "max": 2.0, "step": 0.1, "default": 1.0 }
+      ]
+    },
+    "atmosphere": {
+      "title": "Atmosphere Settings",
+      "fields": [
+        { "type": "toggle", "key": "sky", "label": "Sky Rendering", "default": true },
+        { "type": "toggle", "key": "fog", "label": "Fog Effects", "default": true },
+        { "type": "toggle", "key": "volumetric", "label": "Volumetric Lighting", "default": true },
+        { "type": "toggle", "key": "clouds", "label": "Cloud Rendering", "default": true },
+        { "type": "slider", "key": "fogDensity", "label": "Fog Density", "min": 0.0, "max": 1.0, "step": 0.1, "default": 0.5 }
+      ]
+    }
+  },
+  "otherMods": [
+    { "id": "distant_horizons", "label": "Distant Horizons", "enabled": true },
+    { "id": "conquest_reforged", "label": "Conquest Reforged", "enabled": true },
+    { "id": "custom_shader_pack", "label": "Custom Shader Pack", "enabled": false }
+  ]
+}
